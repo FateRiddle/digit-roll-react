@@ -46,7 +46,7 @@ export default App
 | length    | Number |           | auto       | `length={9}` then 123456 => 000123456                     |
 | height    | Number |           | 3(rem)     | Height of each digit                                      |
 | width     | Number |           | 2(rem)     | width of each digit                                       |
-| divider   | String |           | no divider | `divider=',' then 100000 => 100,000`                      |
+| divider   | String |           | no divider | `divider=','` then 100000 => 100,000                      |
 | delay     | Number |           | 2(s)       | how fast digit rolls                                      |
 | className | String |           | ''         | Optional custom CSS class name to attach to root element. |
 
@@ -54,11 +54,11 @@ export default App
 
 Access the full power of css to customize it to your liking.
 
-| className             | description             |
-| :-------------------- | :---------------------- |
-| `.DigitRoll`          | the root `<div>`.       |
-| `.DigitRoll__Cell`    | `<div>` of each digit   |
-| `.DigitRoll__Divider` | dividing elment `<div>` |
+| className             | description                |
+| :-------------------- | :------------------------- |
+| `.DigitRoll`          | the root `<div>`.          |
+| `.DigitRoll__Cell`    | `<div>` of each digit      |
+| `.DigitRoll__Divider` | `<div>` of dividing elment |
 
 ```css
 /* index.css */
@@ -72,11 +72,12 @@ Access the full power of css to customize it to your liking.
   background: salmon;
   margin: 0 3px;
   border: 1px solid brown;
-  border-radius: 9px;
 }
 
 .DigitRoll__Divider {
+  font-size: 25px;
   color: black;
+  padding: 0 6px;
 }
 ```
 
