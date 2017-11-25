@@ -2,7 +2,7 @@
 
 > Rolling digit/odometer effect by React
 
-[**DEMO**](https://codesandbox.io/s/y294oz0m91)
+**DEMO**: [codesandbox](https://codesandbox.io/s/y294oz0m91)
 
 ### 1. How to use
 
