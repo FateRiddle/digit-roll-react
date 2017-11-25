@@ -1,6 +1,6 @@
 {
   "name": "digit-roll-react",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "simple yet fully customizable rolling digits/odometer effect for react",
   "main": "build/index.js",
   "files": [
