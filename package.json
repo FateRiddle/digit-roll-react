@@ -1,20 +1,11 @@
 {
   "name": "digit-roll-react",
-  "version": "1.0.3",
+  "version": "1.0.0",
   "description": "simple yet fully customizable rolling digits/odometer effect for react",
   "main": "build/index.js",
-  "files": [
-    "css"
-  ],
+  "files": ["css"],
   "repository": "fateriddle/digit-roll-react",
-  "keywords": [
-    "odometer",
-    "digit",
-    "react",
-    "number",
-    "reactjs",
-    "display"
-  ],
+  "keywords": ["odometer", "digit", "react", "number", "reactjs", "display"],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack --watch",
@@ -30,10 +21,11 @@
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
-    "np": "^2.17.0"
-  },
-  "peerDependencies": {
+    "np": "^2.17.0",
     "react": "^16.1.1",
     "webpack": "^3.8.1"
+  },
+  "peerDependencies": {
+    "react": "^0.14.0 || ^15.0.0 || ^16.0.0"
   }
 }
