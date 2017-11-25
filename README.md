@@ -13,7 +13,7 @@ npm install digit-roll-react
 
 ```js
 import React, { Component } from 'react'
-import Odo from 'digit-roll-react'
+import DigitRoll from 'digit-roll-react'
 import 'digit-roll-react/css/default.css'
 
 class App extends Component {
@@ -26,12 +26,12 @@ class App extends Component {
     })
   }
 
-  componentDidMount = () => {
+  componentDidMount() {
     setInterval(this.refresh, 2500)
   }
 
   render() {
-    return <Odo num={this.state.num} length={9} divider="," />
+    return <DigitRoll num={this.state.num} length={9} divider="," />
   }
 }
 
@@ -40,25 +40,25 @@ export default App
 
 ### 2. Prop Types
 
-| Property  | Type   | Required? | default    | Description                                               |
-| :-------- | :----- | :-------- | :--------- | :-------------------------------------------------------- |
-| num       | Number | ✓         | '000000'   | the number you want to render                             |
-| length    | Number |           | auto       | `length={9}` then 123456 => 000123456                     |
-| height    | Number |           | 3(rem)     | Height of each digit                                      |
-| width     | Number |           | 2(rem)     | width of each digit                                       |
-| divider   | String |           | no divider | `divider=','` then 100000 => 100,000                      |
-| delay     | Number |           | 2(s)       | how fast digit rolls                                      |
-| className | String |           | ''         | Optional custom CSS class name to attach to root element. |
+| Property  | Type   | Required? | default    | Description                                              |
+| :-------- | :----- | :-------- | :--------- | :------------------------------------------------------- |
+| num       | Number | ✓         | '000000'   | the number you want to render                            |
+| length    | Number |           | auto       | `length={9}` then 123456 => 000123456                    |
+| height    | Number |           | 3 (rem)    | Height of each digit                                     |
+| width     | Number |           | 2 (rem)    | width of each digit                                      |
+| divider   | String |           | no divider | `divider=','` then 100000 => 100,000                     |
+| delay     | Number |           | 2 (s)      | how fast digit rolls                                     |
+| className | String |           | ''         | Optional custom CSS class name to attach to root element |
 
-### 3. Style your component using css
+### 3. Style it
 
-Access the full power of css to customize it to your liking.
+Access the full power of CSS to customize the component to your liking.
 
-| className             | description                |
-| :-------------------- | :------------------------- |
-| `.DigitRoll`          | the root `<div>`.          |
-| `.DigitRoll__Cell`    | `<div>` of each digit      |
-| `.DigitRoll__Divider` | `<div>` of dividing elment |
+| className             | description                 |
+| :-------------------- | :-------------------------- |
+| `.DigitRoll`          | the root `<div>`.           |
+| `.DigitRoll__Cell`    | `<div>` of each digit       |
+| `.DigitRoll__Divider` | `<div>` of dividing element |
 
 ```css
 /* index.css */
