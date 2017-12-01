@@ -6,6 +6,7 @@ export const formatDigit = (num, length, divider) => {
   } else if (typeof num === 'number') {
     sum = num.toString()
   }
+  // '1234' => '001234'
   const _len = sum.length
   const _fullLen = length && typeof length === 'number' ? length : _len
   if (_len >= _fullLen) {
@@ -15,17 +16,11 @@ export const formatDigit = (num, length, divider) => {
       sum = '0' + sum
     }
   }
-  // 1000000 => 1,000,000
-  if (divider !== undefined && typeof divider === 'string') {
-    if (divider === '') {
-      sum = sum.replace(/\B(?=(\d{3})+(?!\d))/g, 'Z')
-    } else {
-      sum = sum.replace(/\B(?=(\d{3})+(?!\d))/g, divider)
-    }
-  }
   sum = sum.split('').reverse()
-  if (divider === '') {
-    sum = sum.map(d => (d === 'Z' ? '' : d))
+  for (let i = sum.length - 1; i > 0; i--) {
+    if (i % 3 === 0) {
+      sum.splice(i, 0, divider)
+    }
   }
   return sum
 }
