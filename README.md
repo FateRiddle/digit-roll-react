@@ -80,9 +80,8 @@ Access the full power of CSS to customize the component to your liking.
 }
 ```
 
-Then import it **after** the default css file.
+Then import it
 
 ```js
-import 'digit-roll-react/css/default.css'
 import './index.css'
 ```
