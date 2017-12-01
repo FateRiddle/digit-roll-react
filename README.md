@@ -2,7 +2,7 @@
 
 > Rolling digit/odometer effect by React
 
-**DEMO**: [codesandbox](https://codesandbox.io/s/y294oz0m91)
+**DEMO**: [codesandbox](https://codesandbox.io/s/x3qv0o9q4p)
 
 ### 1. How to use
 
@@ -14,7 +14,6 @@ npm install digit-roll-react
 ```js
 import React, { Component } from 'react'
 import DigitRoll from 'digit-roll-react'
-import 'digit-roll-react/css/default.css'
 
 class App extends Component {
   state = { num: 12345678 }
