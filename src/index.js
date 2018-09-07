@@ -5,7 +5,7 @@ import './default.css'
 
 export default class DigitRoll extends PureComponent {
   render() {
-    const { num, length, height, width, divider, delay, className } = this.props
+    const { num, length, height, width, divider = '', delay, className } = this.props
     const numArr = formatDigit(num, length, divider)
     const validDivider =
       divider !== undefined &&
